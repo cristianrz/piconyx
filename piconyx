@@ -83,7 +83,7 @@ while sleep 1; do
 
 	screen="$(
 		uname -nps
-		top -bn1 | head -n 5
+		top -bn1 | grep -iE 'mem|cpu'
 		echo -e "\e[32m"
 		cat /tmp/piconyx.stats
 		echo -e "\n\e[39m\e[7m  LOG  \e[27m\e[36m"
