@@ -84,13 +84,13 @@ while sleep 1; do
 	screen="$(
 		uname -nps
 		top -bn1 | head -n 5
-		echo
+		echo -e "\e[32m"
 		cat /tmp/piconyx.stats
-		echo
-		echo "LOG"
+		echo -e "\n\e[39m\e[7m  LOG  \e[27m\e[36m"
 		tail -n "$logsize" "$logfile" | sed 's/^/  /g'
+		printf "\e[39m"
 	)"
 	clear
-	printf "%s\n" "$screen"
+	printf "%s" "$screen"
 done
 
