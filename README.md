@@ -8,6 +8,7 @@ With this you can get detailed real-time information about your bridge.
 ## Dependencies
 
 * `proxy`/snowflake: https://github.com/keroserene/snowflake
+* `ncurses`
 
 ## Getting started
 
