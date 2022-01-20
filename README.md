@@ -3,10 +3,7 @@
 Piconyx is a command-line monitor for [Snowflake](https://github.com/keroserene/snowflake).
 With this you can get detailed real-time information about your bridge.
 
-![Screenshot](screenshot.png)
-<img src="screenshot.png" alt="screenshot" style="width:60%;"/>
-
-
+<img src="screenshot.png" alt="screenshot" style="display: block; margin-left: auto; margin-right: auto; width:60%;"/>
 
 ## Dependencies
 
