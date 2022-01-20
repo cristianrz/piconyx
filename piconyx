@@ -78,7 +78,7 @@ screen="$(mktemp)"
 
 while sleep 1; do
 	vsize="$(tput lines)"
-	logsize="$((vsize-11))"
+	logsize="$((vsize-9))"
 
 
 	screen="$(
