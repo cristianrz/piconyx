@@ -5,12 +5,12 @@ With this you can get detailed real-time information about your bridge.
 
 ## Dependencies
 
-* `proxy`/snowflake: [[https://github.com/keroserene/snowflake]]
+* `proxy`/snowflake: https://github.com/keroserene/snowflake
 
 ## Getting started
 
 ```terminal
-$ git clone github.com/cristianrz
+$ git clone github.com/cristianrz/piconyx
 ```
 
 install:
@@ -27,4 +27,9 @@ or run
 $ ./piconyx ./snowflake_log_file.log
 ```
 
+if you always have the log file in the same place:
+
+```term
+$ echo 'alias piconyx="piconyx ./snowflake_log_file.log"' >> ~/.bashrc
+```
 
