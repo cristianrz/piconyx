@@ -1,0 +1,412 @@
+2022/01/20 15:22:42 starting
+2022/01/20 15:22:42 WebRTC: Created offer
+2022/01/20 15:22:42 WebRTC: Set local description
+2022/01/20 15:22:43 Offer: {"type":"offer","sdp":"v=0\r\no=- 8083715226443774092 1642692162 IN IP4 [scrubbed]\r\ns=-\r\nt=0 0\r\na=fingerprint:sha-256 EB:BA:6F:97:51:AC:7C:88:B8:9B:C7:F9:8F:C5:78:C7:32:E9:8D:E2:A6:44:83:CF:08:35:33:36:07:7E:93:FE\r\na=group:BUNDLE 0\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 [scrubbed]\r\na=setup:actpass\r\na=mid:0\r\na=sendrecv\r\na=sctp-port:5000\r\na=ice-ufrag:ODCgIdhmyVqLKonL\r\na=ice-pwd:YILzFtuBfMiARVKptBmkKihhqrMjTQno\r\na=candidate:774363101 1 udp 2130706431 [scrubbed] 53375 typ host\r\na=candidate:774363101 2 udp 2130706431 [scrubbed] 53375 typ host\r\na=candidate:2468370631 1 udp 2130706431 [scrubbed] 56722 typ host\r\na=candidate:2468370631 2 udp 2130706431 [scrubbed] 56722 typ host\r\na=candidate:574494503 1 udp 2130706431 [scrubbed] 47612 typ host\r\na=candidate:574494503 2 udp 2130706431 [scrubbed] 47612 typ host\r\na=candidate:354941668 1 udp 1694498815 [scrubbed] 50735 typ srflx raddr [scrubbed] rport 34064\r\na=candidate:354941668 2 udp 1694498815 [scrubbed] 50735 typ srflx raddr [scrubbed] rport 34064\r\na=end-of-candidates\r\n"}
+2022/01/20 15:23:22 NAT type: restricted
+2022/01/20 15:23:23 sdp offer successfully received.
+2022/01/20 15:23:23 Generating answer...
+2022/01/20 15:23:43 Timed out waiting for client to open data channel.
+2022/01/20 15:23:47 sdp offer successfully received.
+2022/01/20 15:23:47 Generating answer...
+2022/01/20 15:24:07 Timed out waiting for client to open data channel.
+2022/01/20 15:25:21 sdp offer successfully received.
+2022/01/20 15:25:21 Generating answer...
+2022/01/20 15:25:23 OnDataChannel
+2022/01/20 15:25:23 Connection successful.
+2022/01/20 15:25:23 OnOpen channel
+2022/01/20 15:25:23 connected to relay
+2022/01/20 15:25:33 sdp offer successfully received.
+2022/01/20 15:25:33 Generating answer...
+2022/01/20 15:25:34 OnDataChannel
+2022/01/20 15:25:34 Connection successful.
+2022/01/20 15:25:34 OnOpen channel
+2022/01/20 15:25:34 connected to relay
+2022/01/20 15:25:34 sdp offer successfully received.
+2022/01/20 15:25:34 Generating answer...
+2022/01/20 15:25:54 Timed out waiting for client to open data channel.
+2022/01/20 15:26:05 sdp offer successfully received.
+2022/01/20 15:26:05 Generating answer...
+2022/01/20 15:26:06 OnDataChannel
+2022/01/20 15:26:06 Connection successful.
+2022/01/20 15:26:06 OnOpen channel
+2022/01/20 15:26:06 connected to relay
+2022/01/20 15:26:06 sdp offer successfully received.
+2022/01/20 15:26:06 Generating answer...
+2022/01/20 15:26:11 OnClose channel
+2022/01/20 15:26:11 Traffic throughput (up|down): 108 B|6 KB -- (89 OnMessages, 4 Sends, over 5 seconds)
+2022/01/20 15:26:11 datachannelHandler ends
+2022/01/20 15:26:26 Timed out waiting for client to open data channel.
+2022/01/20 15:26:37 sdp offer successfully received.
+2022/01/20 15:26:37 Generating answer...
+2022/01/20 15:26:57 Timed out waiting for client to open data channel.
+2022/01/20 15:27:07 sdp offer successfully received.
+2022/01/20 15:27:07 Generating answer...
+2022/01/20 15:27:27 Timed out waiting for client to open data channel.
+2022/01/20 15:27:44 sdp offer successfully received.
+2022/01/20 15:27:44 Generating answer...
+2022/01/20 15:28:04 Timed out waiting for client to open data channel.
+2022/01/20 15:28:26 sdp offer successfully received.
+2022/01/20 15:28:26 Generating answer...
+2022/01/20 15:28:28 OnDataChannel
+2022/01/20 15:28:28 Connection successful.
+2022/01/20 15:28:28 OnOpen channel
+2022/01/20 15:28:28 connected to relay
+2022/01/20 15:28:28 OnClose channel
+2022/01/20 15:28:28 Traffic throughput (up|down): 14 KB|1 KB -- (28 OnMessages, 232 Sends, over 0 seconds)
+2022/01/20 15:28:28 datachannelHandler ends
+2022/01/20 15:29:09 sdp offer successfully received.
+2022/01/20 15:29:09 Generating answer...
+2022/01/20 15:29:29 Timed out waiting for client to open data channel.
+2022/01/20 15:29:59 sdp offer successfully received.
+2022/01/20 15:29:59 Generating answer...
+2022/01/20 15:30:19 Timed out waiting for client to open data channel.
+2022/01/20 15:30:20 sdp offer successfully received.
+2022/01/20 15:30:20 Generating answer...
+2022/01/20 15:30:22 OnDataChannel
+2022/01/20 15:30:22 Connection successful.
+2022/01/20 15:30:22 OnOpen channel
+2022/01/20 15:30:22 connected to relay
+2022/01/20 15:30:22 sdp offer successfully received.
+2022/01/20 15:30:22 Generating answer...
+2022/01/20 15:30:23 OnDataChannel
+2022/01/20 15:30:23 Connection successful.
+2022/01/20 15:30:23 OnOpen channel
+2022/01/20 15:30:23 connected to relay
+2022/01/20 15:30:33 sdp offer successfully received.
+2022/01/20 15:30:33 Generating answer...
+2022/01/20 15:30:54 Timed out waiting for client to open data channel.
+2022/01/20 15:31:26 sdp offer successfully received.
+2022/01/20 15:31:26 Generating answer...
+2022/01/20 15:31:27 OnDataChannel
+2022/01/20 15:31:27 Connection successful.
+2022/01/20 15:31:27 OnOpen channel
+2022/01/20 15:31:27 connected to relay
+2022/01/20 15:32:28 sdp offer successfully received.
+2022/01/20 15:32:28 Generating answer...
+2022/01/20 15:32:48 Timed out waiting for client to open data channel.
+2022/01/20 15:32:48 sdp offer successfully received.
+2022/01/20 15:32:48 Generating answer...
+2022/01/20 15:32:50 OnDataChannel
+2022/01/20 15:32:50 Connection successful.
+2022/01/20 15:32:50 OnOpen channel
+2022/01/20 15:32:50 connected to relay
+2022/01/20 15:32:55 OnClose channel
+2022/01/20 15:32:55 Traffic throughput (up|down): 133 B|6 KB -- (36 OnMessages, 5 Sends, over 5 seconds)
+2022/01/20 15:32:55 datachannelHandler ends
+2022/01/20 15:33:10 sdp offer successfully received.
+2022/01/20 15:33:10 Generating answer...
+2022/01/20 15:33:12 OnDataChannel
+2022/01/20 15:33:12 Connection successful.
+2022/01/20 15:33:12 OnOpen channel
+2022/01/20 15:33:12 sdp offer successfully received.
+2022/01/20 15:33:12 Generating answer...
+2022/01/20 15:33:12 connected to relay
+2022/01/20 15:33:13 OnDataChannel
+2022/01/20 15:33:13 Connection successful.
+2022/01/20 15:33:13 OnOpen channel
+2022/01/20 15:33:13 connected to relay
+2022/01/20 15:35:25 OnClose channel
+2022/01/20 15:35:25 Traffic throughput (up|down): 95 KB|51 KB -- (203 OnMessages, 206 Sends, over 132 seconds)
+2022/01/20 15:35:25 datachannelHandler ends
+2022/01/20 15:35:44 sdp offer successfully received.
+2022/01/20 15:35:44 Generating answer...
+2022/01/20 15:36:04 Timed out waiting for client to open data channel.
+2022/01/20 15:36:31 sdp offer successfully received.
+2022/01/20 15:36:31 Generating answer...
+2022/01/20 15:36:51 Timed out waiting for client to open data channel.
+2022/01/20 15:36:55 sdp offer successfully received.
+2022/01/20 15:36:55 Generating answer...
+2022/01/20 15:37:15 Timed out waiting for client to open data channel.
+2022/01/20 15:37:15 sdp offer successfully received.
+2022/01/20 15:37:15 Generating answer...
+2022/01/20 15:37:35 Timed out waiting for client to open data channel.
+2022/01/20 15:37:45 sdp offer successfully received.
+2022/01/20 15:37:45 Generating answer...
+2022/01/20 15:38:06 Timed out waiting for client to open data channel.
+2022/01/20 15:38:16 sdp offer successfully received.
+2022/01/20 15:38:16 Generating answer...
+2022/01/20 15:38:17 OnDataChannel
+2022/01/20 15:38:17 Connection successful.
+2022/01/20 15:38:17 OnOpen channel
+2022/01/20 15:38:17 connected to relay
+2022/01/20 15:40:52 OnClose channel
+2022/01/20 15:40:52 Traffic throughput (up|down): 184 KB|68 KB -- (248 OnMessages, 267 Sends, over 154 seconds)
+2022/01/20 15:40:52 datachannelHandler ends
+2022/01/20 15:40:59 sdp offer successfully received.
+2022/01/20 15:40:59 Generating answer...
+2022/01/20 15:41:19 Timed out waiting for client to open data channel.
+2022/01/20 15:41:20 sdp offer successfully received.
+2022/01/20 15:41:20 Generating answer...
+2022/01/20 15:41:22 OnDataChannel
+2022/01/20 15:41:22 Connection successful.
+2022/01/20 15:41:22 OnOpen channel
+2022/01/20 15:41:22 connected to relay
+2022/01/20 15:51:26 OnClose channel
+2022/01/20 15:51:26 Traffic throughput (up|down): 5 MB|96 KB -- (488 OnMessages, 11777 Sends, over 1262 seconds)
+2022/01/20 15:51:26 datachannelHandler ends
+2022/01/20 15:51:34 sdp offer successfully received.
+2022/01/20 15:51:34 Generating answer...
+2022/01/20 15:51:54 Timed out waiting for client to open data channel.
+2022/01/20 15:52:14 sdp offer successfully received.
+2022/01/20 15:52:14 Generating answer...
+2022/01/20 15:52:34 Timed out waiting for client to open data channel.
+2022/01/20 15:52:34 sdp offer successfully received.
+2022/01/20 15:52:34 Generating answer...
+2022/01/20 15:52:36 OnDataChannel
+2022/01/20 15:52:36 Connection successful.
+2022/01/20 15:52:36 OnOpen channel
+2022/01/20 15:52:36 connected to relay
+2022/01/20 15:54:26 OnClose channel
+2022/01/20 15:54:26 Traffic throughput (up|down): 1 MB|138 KB -- (502 OnMessages, 4269 Sends, over 1272 seconds)
+2022/01/20 15:54:26 datachannelHandler ends
+2022/01/20 15:54:36 sdp offer successfully received.
+2022/01/20 15:54:36 Generating answer...
+2022/01/20 15:54:38 OnDataChannel
+2022/01/20 15:54:38 Connection successful.
+2022/01/20 15:54:38 OnOpen channel
+2022/01/20 15:54:38 connected to relay
+2022/01/20 15:58:09 OnClose channel
+2022/01/20 15:58:09 Traffic throughput (up|down): 269 KB|20 KB -- (164 OnMessages, 306 Sends, over 210 seconds)
+2022/01/20 15:58:09 datachannelHandler ends
+2022/01/20 15:58:19 sdp offer successfully received.
+2022/01/20 15:58:19 Generating answer...
+2022/01/20 15:58:20 OnDataChannel
+2022/01/20 15:58:20 Connection successful.
+2022/01/20 15:58:20 OnOpen channel
+2022/01/20 15:58:21 connected to relay
+2022/01/20 15:59:26 OnClose channel
+2022/01/20 15:59:26 Traffic throughput (up|down): 6 MB|79 KB -- (318 OnMessages, 13311 Sends, over 1744 seconds)
+2022/01/20 15:59:26 datachannelHandler ends
+2022/01/20 15:59:32 sdp offer successfully received.
+2022/01/20 15:59:32 Generating answer...
+2022/01/20 15:59:34 OnDataChannel
+2022/01/20 15:59:34 Connection successful.
+2022/01/20 15:59:34 OnOpen channel
+2022/01/20 15:59:34 connected to relay
+2022/01/20 16:02:26 OnClose channel
+2022/01/20 16:02:26 Traffic throughput (up|down): 423 KB|1 KB -- (10 OnMessages, 7024 Sends, over 1264 seconds)
+2022/01/20 16:02:26 datachannelHandler ends
+2022/01/20 16:02:41 sdp offer successfully received.
+2022/01/20 16:02:41 Generating answer...
+2022/01/20 16:03:01 Timed out waiting for client to open data channel.
+2022/01/20 16:04:25 sdp offer successfully received.
+2022/01/20 16:04:25 Generating answer...
+2022/01/20 16:04:27 OnDataChannel
+2022/01/20 16:04:27 Connection successful.
+2022/01/20 16:04:27 OnOpen channel
+2022/01/20 16:04:27 connected to relay
+2022/01/20 16:07:55 OnClose channel
+2022/01/20 16:07:55 Traffic throughput (up|down): 3 MB|665 KB -- (2383 OnMessages, 3826 Sends, over 574 seconds)
+2022/01/20 16:07:55 datachannelHandler ends
+2022/01/20 16:08:19 sdp offer successfully received.
+2022/01/20 16:08:19 Generating answer...
+2022/01/20 16:08:21 OnDataChannel
+2022/01/20 16:08:21 Connection successful.
+2022/01/20 16:08:21 OnOpen channel
+2022/01/20 16:08:21 connected to relay
+2022/01/20 16:12:56 OnClose channel
+2022/01/20 16:12:56 Traffic throughput (up|down): 327 KB|148 KB -- (598 OnMessages, 4364 Sends, over 2488 seconds)
+2022/01/20 16:12:56 datachannelHandler ends
+2022/01/20 16:13:03 sdp offer successfully received.
+2022/01/20 16:13:03 Generating answer...
+2022/01/20 16:13:23 Timed out waiting for client to open data channel.
+2022/01/20 16:13:33 sdp offer successfully received.
+2022/01/20 16:13:33 Generating answer...
+2022/01/20 16:13:36 OnDataChannel
+2022/01/20 16:13:36 Connection successful.
+2022/01/20 16:13:36 OnOpen channel
+2022/01/20 16:13:37 connected to relay
+2022/01/20 16:15:06 OnClose channel
+2022/01/20 16:15:06 Traffic throughput (up|down): 2 MB|178 KB -- (579 OnMessages, 2079 Sends, over 404 seconds)
+2022/01/20 16:15:06 datachannelHandler ends
+2022/01/20 16:15:37 sdp offer successfully received.
+2022/01/20 16:15:37 Generating answer...
+2022/01/20 16:15:40 OnDataChannel
+2022/01/20 16:15:40 Connection successful.
+2022/01/20 16:15:40 OnOpen channel
+2022/01/20 16:15:40 connected to relay
+2022/01/20 16:15:44 OnClose channel
+2022/01/20 16:15:44 Traffic throughput (up|down): 4 KB|14 KB -- (164 OnMessages, 13 Sends, over 3 seconds)
+2022/01/20 16:15:44 datachannelHandler ends
+2022/01/20 16:16:01 sdp offer successfully received.
+2022/01/20 16:16:01 Generating answer...
+2022/01/20 16:16:02 OnDataChannel
+2022/01/20 16:16:02 Connection successful.
+2022/01/20 16:16:02 OnOpen channel
+2022/01/20 16:16:02 connected to relay
+2022/01/20 16:16:16 OnClose channel
+2022/01/20 16:16:16 Traffic throughput (up|down): 316 KB|278 KB -- (1469 OnMessages, 1527 Sends, over 3041 seconds)
+2022/01/20 16:16:16 datachannelHandler ends
+2022/01/20 16:16:26 OnClose channel
+2022/01/20 16:16:26 Traffic throughput (up|down): 4 KB|9 KB -- (39 OnMessages, 142 Sends, over 24 seconds)
+2022/01/20 16:16:26 datachannelHandler ends
+2022/01/20 16:16:53 sdp offer successfully received.
+2022/01/20 16:16:53 Generating answer...
+2022/01/20 16:16:57 OnDataChannel
+2022/01/20 16:16:57 Connection successful.
+2022/01/20 16:16:57 OnOpen channel
+2022/01/20 16:16:57 connected to relay
+2022/01/20 16:16:57 sdp offer successfully received.
+2022/01/20 16:16:57 Generating answer...
+2022/01/20 16:16:58 OnDataChannel
+2022/01/20 16:16:58 Connection successful.
+2022/01/20 16:16:58 OnOpen channel
+2022/01/20 16:16:58 connected to relay
+2022/01/20 16:17:02 OnClose channel
+2022/01/20 16:17:02 Traffic throughput (up|down): 108 B|5 KB -- (38 OnMessages, 4 Sends, over 5 seconds)
+2022/01/20 16:17:02 datachannelHandler ends
+2022/01/20 16:17:03 OnClose channel
+2022/01/20 16:17:03 Traffic throughput (up|down): 108 B|26 KB -- (374 OnMessages, 4 Sends, over 5 seconds)
+2022/01/20 16:17:03 datachannelHandler ends
+2022/01/20 16:17:14 sdp offer successfully received.
+2022/01/20 16:17:14 Generating answer...
+2022/01/20 16:17:34 Timed out waiting for client to open data channel.
+2022/01/20 16:17:55 sdp offer successfully received.
+2022/01/20 16:17:55 Generating answer...
+2022/01/20 16:17:57 OnDataChannel
+2022/01/20 16:17:57 Connection successful.
+2022/01/20 16:17:57 OnOpen channel
+2022/01/20 16:17:57 connected to relay
+2022/01/20 16:17:58 sdp offer successfully received.
+2022/01/20 16:17:58 Generating answer...
+2022/01/20 16:18:00 OnDataChannel
+2022/01/20 16:18:00 Connection successful.
+2022/01/20 16:18:00 OnOpen channel
+2022/01/20 16:18:00 connected to relay
+2022/01/20 16:20:56 OnClose channel
+2022/01/20 16:20:56 Traffic throughput (up|down): 2 MB|264 KB -- (1293 OnMessages, 5354 Sends, over 1282 seconds)
+2022/01/20 16:20:56 datachannelHandler ends
+2022/01/20 16:21:00 sdp offer successfully received.
+2022/01/20 16:21:00 Generating answer...
+2022/01/20 16:21:02 OnDataChannel
+2022/01/20 16:21:02 Connection successful.
+2022/01/20 16:21:02 OnOpen channel
+2022/01/20 16:21:02 connected to relay
+2022/01/20 16:21:26 OnClose channel
+2022/01/20 16:21:26 Traffic throughput (up|down): 943 KB|249 KB -- (614 OnMessages, 4985 Sends, over 1019 seconds)
+2022/01/20 16:21:26 datachannelHandler ends
+2022/01/20 16:21:32 sdp offer successfully received.
+2022/01/20 16:21:32 Generating answer...
+2022/01/20 16:21:35 OnDataChannel
+2022/01/20 16:21:35 Connection successful.
+2022/01/20 16:21:35 OnOpen channel
+2022/01/20 16:21:35 connected to relay
+2022/01/20 16:21:45 OnClose channel
+2022/01/20 16:21:45 Traffic throughput (up|down): 38 KB|7 KB -- (36 OnMessages, 44 Sends, over 10 seconds)
+2022/01/20 16:21:45 datachannelHandler ends
+2022/01/20 16:22:25 OnClose channel
+2022/01/20 16:22:25 Traffic throughput (up|down): 101 KB|14 KB -- (136 OnMessages, 156 Sends, over 268 seconds)
+2022/01/20 16:22:25 datachannelHandler ends
+2022/01/20 16:22:45 sdp offer successfully received.
+2022/01/20 16:22:45 Generating answer...
+2022/01/20 16:22:47 OnDataChannel
+2022/01/20 16:22:47 Connection successful.
+2022/01/20 16:22:47 OnOpen channel
+2022/01/20 16:22:47 connected to relay
+2022/01/20 16:22:47 sdp offer successfully received.
+2022/01/20 16:22:47 Generating answer...
+2022/01/20 16:23:07 Timed out waiting for client to open data channel.
+2022/01/20 16:23:08 sdp offer successfully received.
+2022/01/20 16:23:08 Generating answer...
+2022/01/20 16:23:10 OnDataChannel
+2022/01/20 16:23:10 Connection successful.
+2022/01/20 16:23:10 OnOpen channel
+2022/01/20 16:23:10 connected to relay
+2022/01/20 16:23:15 OnClose channel
+2022/01/20 16:23:15 Traffic throughput (up|down): 75 B|1 KB -- (36 OnMessages, 3 Sends, over 4 seconds)
+2022/01/20 16:23:15 datachannelHandler ends
+2022/01/20 16:23:30 sdp offer successfully received.
+2022/01/20 16:23:30 Generating answer...
+2022/01/20 16:23:50 Timed out waiting for client to open data channel.
+2022/01/20 16:24:15 sdp offer successfully received.
+2022/01/20 16:24:15 Generating answer...
+2022/01/20 16:24:17 OnDataChannel
+2022/01/20 16:24:17 Connection successful.
+2022/01/20 16:24:17 OnOpen channel
+2022/01/20 16:24:17 connected to relay
+2022/01/20 16:25:57 OnClose channel
+2022/01/20 16:25:57 Traffic throughput (up|down): 118 KB|14 KB -- (107 OnMessages, 141 Sends, over 190 seconds)
+2022/01/20 16:25:57 datachannelHandler ends
+2022/01/20 16:26:07 sdp offer successfully received.
+2022/01/20 16:26:07 Generating answer...
+2022/01/20 16:26:10 OnDataChannel
+2022/01/20 16:26:10 Connection successful.
+2022/01/20 16:26:10 OnOpen channel
+2022/01/20 16:26:10 connected to relay
+2022/01/20 16:27:20 OnClose channel
+2022/01/20 16:27:20 Traffic throughput (up|down): 3 MB|199 KB -- (2344 OnMessages, 3497 Sends, over 823 seconds)
+2022/01/20 16:27:20 datachannelHandler ends
+2022/01/20 16:27:53 OnClose channel
+2022/01/20 16:27:53 Traffic throughput (up|down): 3 MB|443 KB -- (957 OnMessages, 2637 Sends, over 216 seconds)
+2022/01/20 16:27:53 datachannelHandler ends
+2022/01/20 16:28:00 sdp offer successfully received.
+2022/01/20 16:28:00 Generating answer...
+2022/01/20 16:28:02 OnDataChannel
+2022/01/20 16:28:02 Connection successful.
+2022/01/20 16:28:02 OnOpen channel
+2022/01/20 16:28:02 connected to relay
+2022/01/20 16:28:32 sdp offer successfully received.
+2022/01/20 16:28:32 Generating answer...
+2022/01/20 16:28:52 Timed out waiting for client to open data channel.
+2022/01/20 16:28:53 sdp offer successfully received.
+2022/01/20 16:28:53 Generating answer...
+2022/01/20 16:28:55 OnDataChannel
+2022/01/20 16:28:55 Connection successful.
+2022/01/20 16:28:55 OnOpen channel
+2022/01/20 16:28:55 connected to relay
+2022/01/20 16:31:04 OnClose channel
+2022/01/20 16:31:04 Traffic throughput (up|down): 12 KB|9 KB -- (89 OnMessages, 80 Sends, over 294 seconds)
+2022/01/20 16:31:04 datachannelHandler ends
+2022/01/20 16:31:08 sdp offer successfully received.
+2022/01/20 16:31:08 Generating answer...
+2022/01/20 16:31:09 OnDataChannel
+2022/01/20 16:31:09 Connection successful.
+2022/01/20 16:31:09 OnOpen channel
+2022/01/20 16:31:09 connected to relay
+2022/01/20 16:33:01 OnClose channel
+2022/01/20 16:33:01 Traffic throughput (up|down): 9 KB|9 KB -- (89 OnMessages, 69 Sends, over 246 seconds)
+2022/01/20 16:33:01 datachannelHandler ends
+2022/01/20 16:33:30 sdp offer successfully received.
+2022/01/20 16:33:30 Generating answer...
+2022/01/20 16:33:50 Timed out waiting for client to open data channel.
+2022/01/20 16:33:51 sdp offer successfully received.
+2022/01/20 16:33:51 Generating answer...
+2022/01/20 16:34:11 Timed out waiting for client to open data channel.
+2022/01/20 16:34:13 sdp offer successfully received.
+2022/01/20 16:34:13 Generating answer...
+2022/01/20 16:34:33 Timed out waiting for client to open data channel.
+2022/01/20 16:34:33 sdp offer successfully received.
+2022/01/20 16:34:33 Generating answer...
+2022/01/20 16:34:34 OnDataChannel
+2022/01/20 16:34:34 Connection successful.
+2022/01/20 16:34:34 OnOpen channel
+2022/01/20 16:34:34 connected to relay
+2022/01/20 16:36:56 OnClose channel
+2022/01/20 16:36:56 Traffic throughput (up|down): 751 KB|111 KB -- (459 OnMessages, 4143 Sends, over 2660 seconds)
+2022/01/20 16:36:56 datachannelHandler ends
+2022/01/20 16:37:47 sdp offer successfully received.
+2022/01/20 16:37:47 Generating answer...
+2022/01/20 16:37:56 OnClose channel
+2022/01/20 16:37:56 Traffic throughput (up|down): 203 KB|32 KB -- (101 OnMessages, 3487 Sends, over 1196 seconds)
+2022/01/20 16:37:56 datachannelHandler ends
+2022/01/20 16:38:07 Timed out waiting for client to open data channel.
+2022/01/20 16:38:07 sdp offer successfully received.
+2022/01/20 16:38:07 Generating answer...
+2022/01/20 16:38:08 OnDataChannel
+2022/01/20 16:38:08 Connection successful.
+2022/01/20 16:38:08 OnOpen channel
+2022/01/20 16:38:08 connected to relay
+2022/01/20 16:38:08 sdp offer successfully received.
+2022/01/20 16:38:08 Generating answer...
+2022/01/20 16:38:13 OnClose channel
+2022/01/20 16:38:13 Traffic throughput (up|down): 108 B|1 KB -- (24 OnMessages, 4 Sends, over 5 seconds)
+2022/01/20 16:38:13 datachannelHandler ends
+2022/01/20 16:38:28 Timed out waiting for client to open data channel.
+2022/01/20 16:39:19 sdp offer successfully received.
+2022/01/20 16:39:19 Generating answer...
+2022/01/20 16:39:21 OnDataChannel
+2022/01/20 16:39:21 Connection successful.
+2022/01/20 16:39:21 OnOpen channel
+2022/01/20 16:39:21 connected to relay
+2022/01/20 16:39:25 sdp offer successfully received.
+2022/01/20 16:39:25 Generating answer...

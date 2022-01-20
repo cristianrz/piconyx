@@ -1,0 +1,61 @@
+#!/bin/awk -f
+
+function panic(msg) {
+	printf("error: %s\n", msg) > "/dev/stderr"
+	exit(1)
+}
+
+# turns bytes into a string like 3MB
+function convbyte(num,unit) {
+	debug(sprintf("convbyte called with %s and %s", num, unit))
+
+	if (num < 1024) {
+		result = sprintf("%.1f%s", num, unit)
+		debug(sprintf("returning: %s",result))
+		return result
+	} else {
+		if (unit == "B") return convbyte(num/1024,"KB")
+		else if (unit == "KB") return convbyte(num/1024,"MB")
+		else if (unit == "MB") return convbyte(num/1024,"GB")
+		else if (unit == "GB") return convbyte(num/1024,"TB")
+		else panic(sprintf("unknown unit %s",unit))
+	}
+}
+
+# turns a string like 3MB to bytes
+function tobyte(num,unit) {
+	if (unit == "B") return num
+	else if (unit == "KB") return num*1024
+	else if (unit == "MB") return num*1024*1024
+	else if (unit == "GB") return num*1024*1024*1024
+	else panic(sprintf("unknown unit %s",unit))
+}
+
+function debug(msg) {
+	if (verbose) printf("DEBUG: %s\n", msg)	
+}
+
+BEGIN {
+	up = 0
+	down = 0
+	file="updown"
+
+	verbose=0
+}
+
+/Traffic/ {
+	gsub(/\|/," ")
+	up = up + tobyte($7,$8)
+	down = down + tobyte($9,$10)
+
+	debug(sprintf("this.up: %s, this.down: %s", up, down))
+
+	totalup = convbyte(up, "B")
+	file = "updown"
+	printf("Up: %s / Down: %s\n", totalup, convbyte(down,"B")) > "updown"
+	close(file)
+}
+
+END {
+}
+

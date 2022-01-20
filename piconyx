@@ -1,0 +1,30 @@
+#!/bin/sh
+
+set -eu
+
+logfile="$1"
+
+tail -f -n +1 "$logfile" | awk -f stats &
+stats="$!"
+trap 'kill $stats' EXIT
+
+screen="$(mktemp)"
+
+while sleep 1; do
+	vsize="$(tput lines)"
+	logsize="$((vsize-11))"
+
+
+	screen="$(
+		uname -nps
+		top -bn1 | head -n 5
+		echo
+		cat updown
+		echo
+		echo "LOG"
+		tail -n "$logsize" "$logfile" | sed 's/^/  /g'
+	)"
+	clear
+	printf "%s\n" "$screen"
+done
+
