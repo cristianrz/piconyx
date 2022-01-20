@@ -46,15 +46,15 @@ BEGIN {
 }
 
 /Traffic/ {
+	users=users+1
 	gsub(/\|/," ")
 	up = up + tobyte($7,$8)
 	down = down + tobyte($9,$10)
 
 	debug(sprintf("this.up: %s, this.down: %s", up, down))
 
-	totalup = convbyte(up, "B")
 	file = "/tmp/piconyx.stats"
-	printf("Up: %s / Down: %s\n", totalup, convbyte(down,"B")) > file
+	printf("Up: %s / Down: %s\nUsers: %s\n", convbyte(up,"B"), convbyte(down,"B"), users) > file
 	close(file)
 }
 
@@ -78,7 +78,7 @@ screen="$(mktemp)"
 
 while sleep 1; do
 	vsize="$(tput lines)"
-	logsize="$((vsize-9))"
+	logsize="$((vsize-10))"
 
 
 	screen="$(
