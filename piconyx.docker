@@ -1,1 +1,96 @@
+#!/bin/sh
+
+set -eu
+
+awkstats='function panic(msg) {
+	printf("error: %s\n", msg) > "/dev/stderr"
+	exit(1)
+}
+
+# turns bytes into a string like 3MB
+function convbyte(num,unit) {
+	debug(sprintf("convbyte called with %s and %s", num, unit))
+
+	if (num < 1024) {
+		result = sprintf("%.1f%s", num, unit)
+		debug(sprintf("returning: %s",result))
+		return result
+	} else {
+		if (unit == "B") return convbyte(num/1024,"KB")
+		else if (unit == "KB") return convbyte(num/1024,"MB")
+		else if (unit == "MB") return convbyte(num/1024,"GB")
+		else if (unit == "GB") return convbyte(num/1024,"TB")
+		else panic(sprintf("unknown unit %s",unit))
+	}
+}
+
+# turns a string like 3MB to bytes
+function tobyte(num,unit) {
+	if (unit == "B") return num
+	else if (unit == "KB") return num*1024
+	else if (unit == "MB") return num*1024*1024
+	else if (unit == "GB") return num*1024*1024*1024
+	else panic(sprintf("unknown unit %s",unit))
+}
+
+function debug(msg) {
+	if (verbose) printf("DEBUG: %s\n", msg)	
+}
+
+BEGIN {
+	up = 0
+	down = 0
+	file="updown"
+
+	verbose=0
+}
+
+/throughput/ {
+	users=users+1
+	gsub(/\|/," ")
+	up = up + tobyte($7,$8)
+	down = down + tobyte($9,$10)
+
+	debug(sprintf("this.up: %s, this.down: %s", up, down))
+
+	file = "/tmp/piconyx.stats"
+	printf("Up: %s / Down: %s\nUsers: %s\n", convbyte(up,"B"), convbyte(down,"B"), users) > file
+	close(file)
+}
+
+END {
+}'
+
+case "$#" in
+	1) : ;;
+	*) printf 'usage: piconyx.docker [CONTAINER ID]\n'; exit 1 ;;
+esac
+
+printf "Loading..." >&2
+
+container_id="$1"
+
+docker logs --follow $container_id  2>&1 | awk "$awkstats" &
+stats="$!"
+trap 'kill $stats' EXIT
+
+screen="$(mktemp)"
+
+while sleep 1; do
+	vsize="$(tput lines)"
+	logsize="$((vsize-10))"
+
+
+	screen="$(
+		uname -nms
+		top -bn1 | awk '$1 == "PID" { exit } /[MC][pPie][uUm]/'
+		/usr/bin/echo -e "\e[32m"
+		cat /tmp/piconyx.stats
+		/usr/bin/echo -e "\n\e[39m\e[7m  LOG  \e[27m\e[36m"
+		docker logs --tail "$logsize" $container_id  2>&1 | sed 's/^/  /g'
+		printf "\e[39m"
+	)"
+	clear
+	printf "%s" "$screen"
+done
 
