@@ -76,7 +76,7 @@ trap 'kill $stats' EXIT
 
 screen="$(mktemp)"
 
-while sleep 1; do
+while sleep 2; do
 	vsize="$(tput lines)"
 	logsize="$((vsize-10))"
 
