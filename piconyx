@@ -82,7 +82,7 @@ while sleep 1; do
 
 
 	screen="$(
-		uname -nps
+		uname -nms
 		top -bn1 | awk '$1 == "PID" { exit } /[MC][pPie][uUm]/'
 		/usr/bin/echo -e "\e[32m"
 		cat /tmp/piconyx.stats
