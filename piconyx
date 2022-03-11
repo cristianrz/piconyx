@@ -45,7 +45,7 @@ BEGIN {
 	verbose=0
 }
 
-/Traffic/ {
+/throughput/ {
 	users=users+1
 	gsub(/\|/," ")
 	up = up + tobyte($7,$8)
