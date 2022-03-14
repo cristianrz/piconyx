@@ -45,7 +45,7 @@ BEGIN {
 	verbose=0
 }
 
-/Traffic/ {
+/throughput/ {
 	users=users+1
 	gsub(/\|/," ")
 	up = up + tobyte($7,$8)
@@ -82,11 +82,11 @@ while sleep 1; do
 
 
 	screen="$(
-		uname -nps
+		uname -nms
 		top -bn1 | awk '$1 == "PID" { exit } /[MC][pPie][uUm]/'
-		echo -e "\e[32m"
+		/usr/bin/echo -e "\e[32m"
 		cat /tmp/piconyx.stats
-		echo -e "\n\e[39m\e[7m  LOG  \e[27m\e[36m"
+		/usr/bin/echo -e "\n\e[39m\e[7m  LOG  \e[27m\e[36m"
 		tail -n "$logsize" "$logfile" | sed 's/^/  /g'
 		printf "\e[39m"
 	)"
