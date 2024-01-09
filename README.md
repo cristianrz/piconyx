@@ -28,7 +28,7 @@ SNOWFLAKE_LOG="$(pwd)/snowflake.log"
 Get the repository:
 
 ```terminal
-$ git clone github.com/cristianrz/piconyx
+$ git clone https://github.com/cristianrz/piconyx
 ```
 
 install:
